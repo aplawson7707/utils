@@ -23,7 +23,7 @@ with open(input1, 'r') as csv1, open(input2, 'r') as csv2:
     import1 = csv1.readlines()
     import2 = csv2.readlines()
 
-with open('data_cleaning/data_diff.csv', 'w') as outFile:
+with open('data_diff.csv', 'w') as outFile:
     for row in import2:
         if row not in import1:
             outFile.write(row)
